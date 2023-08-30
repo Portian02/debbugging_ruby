@@ -63,13 +63,8 @@ p find_word_lengths(animals)
 drink_list = ["water", "tea","milk","coffee"]
 def coffee_drink?(drink_list)
   # use #include? to return true when the drink_list (array) contains the string "coffee" or "espresso"
-   if drink_list.include?("coffee")
-    true
-   elsif drink_list.include?("espresso")
-    true
-   else
-    false
-   end
+drink_list.include?("coffee") || drink_list.include?("espresso")
+    
 end
 p "erxecise#6"
 p  coffee_drink?(drink_list)
@@ -102,10 +97,10 @@ word_list2 = ["Pepsi", "Coke", "Dr. Pepper"]
 
 def correct_format?(word_list)
   # use #none? to return true when none of the words in the word_list (array) are in upcase
-  
-  word_list.none? {|word|word.include?(word.upcase)}
+ 
+  word_list.none? {|word| word == word.upcase}
 end
-
+p "exercise#9"
 p correct_format?(word_list2)
 #
 #
