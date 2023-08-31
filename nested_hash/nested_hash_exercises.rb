@@ -114,5 +114,5 @@ def find_language_facts(languages, language_name, fact_index = 0)
  languages.dig(language_name, :facts, fact_index)
 
 end
-
-p find_language_facts(h6, :phyton)
+p "exercise#7"
+p find_language_facts(h6, :ruby)
